@@ -4,16 +4,16 @@
 echo "Starting installation"
 printenv
 monaco_version="v1.6.0" 
-source_repo="https://github.com/dynatrace-ace/perform2021-vhot-monaco" 
+source_repo="https://github.com/aej-partners-monaco/partners-vhot-monaco" 
 clone_folder="bootstrap"
 domain="nip.io"
 jenkins_chart_version="3.3.18"
-git_org="perform"
-git_repo="perform"
+git_org="partners"
+git_repo="monaco"
 git_user="dynatrace"
 git_pwd="dynatrace"
-git_email="perform2021@dt-perform.com"
-shell_user=${shell_user:="dtu_training"}
+git_email="dtpartners@uservm.com"
+shell_user=${shell_user:="ubuntu"}
 
 # These need to be set as environment variables prior to launching the script
 #export DT_ENV_URL=
