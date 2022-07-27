@@ -17,18 +17,13 @@ Each participant has a dedicated lab environment that includes:
 ![Lab environment](../../assets/images/00_lab_environment.png)
 
 ### Connect
-1. Log in on `Dynatrace University`
-    https://university.dynatrace.com
+1. Open the **web shell** through the launchpad dashboard
 
-2. On your university dashboard, you'll see an event named `GitOps for Observability with Monitoring as Code`. Go ahead and open up the event.
-
-3. Select the `Environments` tab. Click on `Open terminal` and execute the command below to ensure Monaco is properly installed on your VM.
+2. Execute the command below to ensure Monaco is properly installed on your VM.
 
     ```
     monaco
     ```
-
-    > **Note:** Dynatrace University provides a browser-based SSH client (recommended). If you prefer, you can use your own SSH client with the VM credentials shown on the `Environments` tab.
 
     The expected output for this command will be the Monaco help page that explains usage and command options.
 
@@ -73,18 +68,12 @@ Each participant has a dedicated lab environment that includes:
     2022-02-03 11:40:27 ERROR Required flag "environments" not set
    ```
 
-4. From the `Environments` tab, use the `View environment` button to open up your Dynatrace environment in a new window and sign in with the provided credentials.
+3. Open the **ACE dashboard** through the launchpad dashboard.
 
-5. Copy your VM's public IP address from the `Environments` tab. Add a new tab to the new window of the previous step and navigate to the URL below, replacing `<VM_IP>` with your VM's IP address: 
+4. Open **Gitea** through the launchpad dashoard and log in with the displayed credentials
 
-    > `http://dashboard.<VM_IP>.nip.io`
+5. Open **Jenkins** through the launchpad dashoard and log in with the displayed credentials
 
-    This is how the dashboard page should look like: 
-
-    ![Dashboard page](../../assets/images/00_dashboard_page.png)
-
-6. Via the links on the dashboard page, open up **Gitea** and **Jenkins** in new tabs and log in with the credentials shown on the dashboard page.
-
-> **Note:** All further lab instructions will be provided in this repo itself. The Monaco documentation can be found on [GitHub](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code).
+> **Note:** The Monaco documentation can be found on [GitHub](https://github.com/dynatrace-oss/dynatrace-monitoring-as-code).
 
 ### We're now ready to kick off the lab!
