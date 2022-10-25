@@ -3,7 +3,7 @@
 ##########################################
 echo "Starting installation"
 printenv
-monaco_version="v1.6.0" 
+monaco_version="v1.8.5" 
 source_repo="https://github.com/aej-partners-monaco/partners-vhot-monaco" 
 clone_folder="bootstrap"
 domain="nip.io"
@@ -36,7 +36,7 @@ snap install jq
 # Create Dynatrace Tokens       #
 #################################
 
-$DT_CREATE_ENV_TOKENS=${DT_CREATE_ENV_TOKENS:="false"}
+DT_CREATE_ENV_TOKENS=${DT_CREATE_ENV_TOKENS:="false"}
 echo "Create Dynatrace Tokens? : $DT_CREATE_ENV_TOKENS"
 
 if [ "$DT_CREATE_ENV_TOKENS" != "false" ]; then
@@ -190,7 +190,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create
 ##############################
 
 echo "Gitea - Install using Helm"
-helm repo add k8s-land https://charts.k8s.land
+helm repo add k8s-land https://static.dynatrace.partners/helm_repo/
 
 sed \
     -e "s|INGRESS_PLACEHOLDER|$ingress_domain|"  \
