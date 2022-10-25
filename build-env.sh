@@ -3,7 +3,7 @@
 ##########################################
 echo "Starting installation"
 printenv
-monaco_version="v1.8.5" 
+monaco_version="v1.8.1" 
 source_repo="https://github.com/aej-partners-monaco/partners-vhot-monaco" 
 clone_folder="bootstrap"
 domain="nip.io"
