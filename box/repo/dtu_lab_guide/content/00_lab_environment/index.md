@@ -34,6 +34,8 @@ Each participant has a dedicated lab environment that includes:
     Check out the beta of the new CLI by adding the environment variable
     "NEW_CLI".
 
+    We cannot wait for your feedback.
+
     NAME:
     monaco - Automates the deployment of Dynatrace Monitoring Configuration to one or multiple Dynatrace environments.
 
@@ -41,9 +43,10 @@ Each participant has a dedicated lab environment that includes:
     monaco [global options] command [command options] [working directory]
 
     VERSION:
-    1.6.0
+    1.8.1
 
     DESCRIPTION:
+
     Tool used to deploy dynatrace configurations via the cli
 
     Examples:
@@ -53,20 +56,22 @@ Each participant has a dedicated lab environment that includes:
         Deploy a specific project to a specific tenant:
         monaco --environments environments.yaml --specific-environment dev --project myProject
 
+
     COMMANDS:
     help, h  Shows a list of commands or help for one command
 
     GLOBAL OPTIONS:
-    --verbose, -v                             (default: false)
-    --environments value, -e value            Yaml file containing environments to deploy to
-    --specific-environment value, --se value  Specific environment (from list) to deploy to (default: none)
-    --project value, -p value                 Project configuration to deploy (also deploys any dependent configurations) (default: none)
-    --dry-run, -d                             Switches to just validation instead of actual deployment (default: false)
     --continue-on-error, -c                   Proceed deployment even if config upload fails (default: false)
+    --dry-run, -d                             Switches to just validation instead of actual deployment (default: false)
+    --environments value, -e value            Yaml file containing environments to deploy to
     --help, -h                                show help (default: false)
+    --project value, -p value                 Project configuration to deploy (also deploys any dependent configurations) (default: none)
+    --specific-environment value, --se value  Specific environment (from list) to deploy to (default: none)
+    --verbose, -v                             (default: false)
     --version                                 print the version (default: false)
-    2022-02-03 11:40:27 ERROR Required flag "environments" not set
-   ```
+
+    2022-10-25 09:42:30 ERROR Required flag "e" not set
+    ```
 
 3. Open the **ACE dashboard** through the launchpad dashboard.
 

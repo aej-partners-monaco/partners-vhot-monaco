@@ -132,7 +132,7 @@ The pipeline includes two Monaco projects:
 
 4. Let's now take a look in Jenkins. 
 
-    Go to `Manage Jenkins` > `Configure System` > `Cloud configuration page` (bottom of settings page) > `Pod Templates` > `Pod Template monaco-runner` > `Pod Template details...` and look at the configuration.
+    Go to `Manage Jenkins` > `Manage Nodes and Clouds` > `Configure Clouds` > `Pod Templates` (bottom one) > `Pod Template monaco-runner` > `Pod Template details...` and look at the configuration.
 
     ![Pod template](../../assets/images/02_pod_template.png)
 

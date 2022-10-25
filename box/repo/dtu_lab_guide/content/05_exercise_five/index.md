@@ -2,9 +2,7 @@
 
 In this exercise, we'll use templates to onboard new applications and teams.
 
-Application teams might not be that familiar with Dynatrace. Also, they might not really know what they want from the product yet—besides great monitoring of course!
-
-A good way to onboard these teams—especially in a Kubernetes environment—is to create a set of default configurations such as dashboards, management zones, applications, etc. These default configurations can later be adapted by those teams to suit their own specific requirements.
+Application teams might not be that familiar with Dynatrace. Also, they might not really know what they want from the product yet—besides great monitoring of course! A good way to onboard these teams—especially in a Kubernetes environment—is to create a set of default configurations such as dashboards, management zones, applications, etc. These default configurations can later be adapted by those teams to suit their own specific requirements.
 
 >**Note:** This exercise depends on tag created in exercise two. If the tag was deleted, please run the pipeline of exercise two again.
 

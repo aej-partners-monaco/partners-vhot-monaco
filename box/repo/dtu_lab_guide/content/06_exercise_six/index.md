@@ -55,6 +55,8 @@ and paste it into
     git pull
     ```
 
+    > Tip: If you get permission errors, run the command with sudo privileges.
+
     Confirm that both `environments.yaml` and `delete.yaml` are pulled into the current directory
 
     ```bash

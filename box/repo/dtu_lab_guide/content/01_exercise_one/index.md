@@ -29,17 +29,13 @@ First, we'll create an automatic *key:value* tag that identifies the owners of p
 
 8. Condition will be `owner (environment) - Exists`
 
-    >**Tip:** Open up the drop-down menu and start typing to immediately jump to the desired option.
+    >**Tip:** Property: Custom metadata > Key source: Environment > Dynamic key: owner > Operator: exists
 
 9. Check the box `Apply to all services provided by the process groups`
 
-    ![Owner tag configuration](../../assets/images/01_owner_tag_config.png)
-
 10. Click on `Preview`
 
-11. Click on `Create rule`
-
-12. Click on `Save changes`
+11. Click on `Save changes`
 
 You can now filter **process groups** and **services** using the `Owner` tag!
 
@@ -305,7 +301,7 @@ We'll now update our local repo from Gitea and execute Monaco from our project s
     echo $DT_API_TOKEN
     ```
 
-    > **Note:** For this training, we use an environment variable to supply Monaco with our Dynatrace API token. For security reasons, this is not a recommended approach for production environments. Consider storing APIs token safely, e.g. as a secret or in a credential vault.
+    > **Note:** For this training, we use an environment variable to supply Monaco with our Dynatrace API token. For production environments, consider storing such API tokens safely, e.g. as a secret or in a credential vault.
 
     ***We're now ready to see Monaco in action!***
 
@@ -328,14 +324,16 @@ We'll now update our local repo from Gitea and execute Monaco from our project s
       Check out the beta of the new CLI by adding the environment variable
         "NEW_CLI".
 
-      2022-02-04 11:24:43 INFO  Dynatrace Monitoring as Code v1.6.0
-      2022-02-04 11:24:43 INFO  Executing projects in this order:
-      2022-02-04 11:24:43 INFO  	1: perform (1 configs)
-      2022-02-04 11:24:43 INFO  Processing environment perform...
-      2022-02-04 11:24:43 INFO  	Processing project perform...
-      2022-02-04 11:24:43 INFO  Deployment summary:
-      2022-02-04 11:24:43 INFO  Validation finished without errors
-      2022-02-04 11:24:43 INFO  There is no delete file delete.yaml found in delete.yaml. Skipping delete config.
+      We cannot wait for your feedback.
+
+      2022-10-25 10:13:24 INFO  Dynatrace Monitoring as Code v1.8.1
+      2022-10-25 10:13:24 INFO  Executing projects in this order: 
+      2022-10-25 10:13:24 INFO  1: perform (1 configs)
+      2022-10-25 10:13:24 INFO  Processing environment perform...
+      2022-10-25 10:13:24 INFO  Processing project perform...
+      2022-10-25 10:13:24 INFO  Deployment summary:
+      2022-10-25 10:13:24 INFO  Validation finished without errors
+      2022-10-25 10:13:24 INFO  There is no delete file delete.yaml found in delete.yaml. Skipping delete config.
       ```
 
 7.  Remove the `-d` flag to apply all configurations in the project
